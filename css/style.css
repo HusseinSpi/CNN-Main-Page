@@ -2,7 +2,6 @@ header {
   background-color: black;
   color: white;
   width: 100%;
-  position: relative;
 }
 
 .ads {
@@ -61,13 +60,17 @@ header {
   color: white;
 }
 
-.nav {
+header nav.nav {
   background-color: black;
   color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 0 50px;
+  position: -webkit-sticky;
+  width: 100%;
+  top: 0;
+  z-index: 99;
 }
 
 .btn {
@@ -326,10 +329,4 @@ main img:hover {
 .left {
   text-align: start;
   width: 70%;
-}
-
-nav.nav {
-  position: sticky;
-  top: 0;
-  width: 100%;
 }
