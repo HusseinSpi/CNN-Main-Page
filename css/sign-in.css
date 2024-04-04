@@ -126,7 +126,8 @@ a {
 }
 
 main ul {
-  list-style: inside;
+  list-style: outside;
+  display: inline-block;
 }
 
 .input {
